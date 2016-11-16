@@ -1,0 +1,23 @@
+body {
+  background-image: url(images/CoalTruck.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+}
+
+h1{
+  text-align:right;
+  color:white;
+  font-weight:500;
+}
+
+h4 {
+  font-size:95%;
+  color: white;
+  font-weight: 600;
+  text-align:right;
+  padding-right:-2vw;
+}
+
+a:link{
+  color:SpringGreen;
+}

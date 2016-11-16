@@ -9,10 +9,16 @@ output:
       collapsed: false
 name: "my-website"
 navbar:
-  title: "Matthew R.V. Ross"
   left:
     - text: "Home"
       href: index.html
     - text: "Research"
       href: research.html
+    - text: "Approach"
+      href: approach.html
+  right:
+    - icon: fa-github fa-lg 
+      href: http://github.com/matthewross07 
+  
+    
 
