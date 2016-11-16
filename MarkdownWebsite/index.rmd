@@ -1,0 +1,12 @@
+---
+title: "Designed Ecosystems"
+output:
+  html_document:
+    css:  file.css
+---
+
+####Building cities, farming crops, and mining ore all have changed
+####the face of the earth. In many of these altered places, human
+####design decisions control environmental processes more than 
+####the co-evolution of land and .  I study 
+####these human landscapes asking:

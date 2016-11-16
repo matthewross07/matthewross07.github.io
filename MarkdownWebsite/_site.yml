@@ -1,0 +1,18 @@
+output_dir: '.'
+output:
+  html_document:
+    theme: cosmo
+    highlight: textmate
+    mathjax: null
+    toc_depth: 3
+    toc_float:
+      collapsed: false
+name: "my-website"
+navbar:
+  title: "Matthew R.V. Ross"
+  left:
+    - text: "Home"
+      href: index.html
+    - text: "Research"
+      href: research.html
+
