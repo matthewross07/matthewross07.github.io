@@ -1,5 +1,5 @@
 ---
-title: "Human Ecosystems"
+title: "matt.ross(at)duke.edu"
 output:
   html_document:
     css:  index.css

@@ -9,6 +9,7 @@ output:
       collapsed: false
 name: "my-website"
 navbar:
+  title: ""
   left:
     - text: "Home"
       href: index.html

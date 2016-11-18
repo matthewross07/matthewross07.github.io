@@ -1,7 +1,7 @@
 body {
   background-image: url(images/CoalTruck.jpg);
   background-repeat: no-repeat;
-  background-size: 100% auto;
+  background-size: cover;
 }
 
 h1{
@@ -11,11 +11,10 @@ h1{
 }
 
 h4 {
-  font-size:95%;
+  font-size:100%;
   color: white;
   font-weight: 600;
   text-align:right;
-  padding-right:-2vw;
 }
 
 a:link{
