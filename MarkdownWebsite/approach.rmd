@@ -1,9 +1,11 @@
 ---
-title: "Approach"
+title: ""
 output:
   html_document:
     css:  approach.css
 ---
+<br>
+<br>
 
 ####I like to work on broad theoretical ideas paired
 ####with analysis and visualization of data from 
@@ -19,6 +21,36 @@ output:
 ####-[Mining changes how water moves through mined landscapes](http://mtm-hydro.web.duke.edu/)
 ####-[Mining increases weathering rates of bedrock](http://mtm-weathering.web.duke.edu/)
 ####-[60 year record of watershed biogeochemistry at Hubbard Brook, in progress](http://hubbardbrook-web.duke.edu/)
+  
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
 
 ![Mining progressing in Mud River, WV](images/MR.gif)
+<br>
+
+
+![Dramatic changes to water chemistry in mined watersheds of West Virginia](images/2.SampleAnalysis.png)
+<br>
+
+
+![Thinking about design as a field that links landscape architecture, applied ecology, iphones and chairs](images/design.png)
+<br>
+
+![Mining changes hydrology and chemistry of streams, turning watersheds from stormflow dominated to baseflow dominated systems](images/runoff.png)
+
+<br>
+
+
 

@@ -1,14 +1,19 @@
+body {
+  background-image: url(images/mtm_cake.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+}
 
 h1{
-  text-align:right;
-  color:white;
+  text-align:left;
+  color:black;
   font-weight:500;
 }
 
 h4 {
-  font-size:125%;
+  font-size:105%;
   color: black;
-  font-weight: 600;
+  font-weight: 700;
   text-align:left;
 }
 
