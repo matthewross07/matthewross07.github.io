@@ -14,7 +14,7 @@ output:
 ####Mostly this means I spend a lot of time 
 ####programming in R. In fact this whole website 
 ####was made using RMarkdown. For examples of my work
-####you can go to my [github](https://github.com/matthewross07) or scroll down
+####you can go to my [github](https://github.com/matthewross07), scroll down
 ####or look at my ShinyR data applications:
 
 ####-[Mining has dramatically changed the landscape in West Virginia](http://mtm-explore.web.duke.edu/)
@@ -34,23 +34,28 @@ output:
 <br>
 <br>
 <br>
+<br>
+<br>
 
-
-
+###Some visual examples of current projects
+<div id='gif'>
 ![Mining progressing in Mud River, WV](images/MR.gif)
+</div>
+
 <br>
 
 
 ![Dramatic changes to water chemistry in mined watersheds of West Virginia](images/2.SampleAnalysis.png)
+
 <br>
 
 
 ![Thinking about design as a field that links landscape architecture, applied ecology, iphones and chairs](images/design.png)
+
 <br>
 
 ![Mining changes hydrology and chemistry of streams, turning watersheds from stormflow dominated to baseflow dominated systems](images/runoff.png)
 
-<br>
 
 
 

@@ -1,22 +1,39 @@
 body {
-  background-image: url(images/mtm_cake.jpg);
+  background-image:      linear-gradient(
+      rgba(0, 0, 0, 0.4),
+      rgba(0, 0, 0, 0.4)
+    ),
+    url(images/mtm_cake.jpg);
   background-repeat: no-repeat;
-  background-size: 100% auto;
+  background-size: cover;
+  height:120vh;
 }
 
+#gif{
+  size:cover;
+  background-color:white;
+}
 h1{
   text-align:left;
-  color:black;
+  color:white;
   font-weight:500;
+}
+
+h3{
+  text-align:center;
+  color:white;
+  font-weight:600;
+  background-color:#7F000000;
 }
 
 h4 {
   font-size:105%;
-  color: black;
+  color: white;
   font-weight: 700;
   text-align:left;
 }
 
 a:link{
-  color:blue;
+  color:SpringGreen;
 }
+

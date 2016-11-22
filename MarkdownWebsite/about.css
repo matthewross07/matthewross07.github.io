@@ -1,0 +1,22 @@
+body {
+  background-image: url(images/me.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+h1{
+  text-align:left;
+  color:black;
+  font-weight:500;
+}
+
+h4 {
+  font-size:105%;
+  color: black;
+  font-weight: 700;
+  text-align:left;
+}
+
+a:link{
+  color:blue;
+}
