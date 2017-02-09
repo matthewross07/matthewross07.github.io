@@ -1,0 +1,56 @@
+---
+title: "GDAL Server Install"
+author: "Matthew Ross"
+date: "December 9, 2015"
+output: html_document
+---
+
+For a shiny server to do any geospatial work, like displaying maps or rasters. The server needs to have a key geospatial toolkit installed called "gdal." Gdal is not super easy to install so this is quick tutorial in the terminal commands to get it installed, so that the package "rgdal" which interfaces with gdal works in R!
+
+First you will need to add the "ubuntugis" repository as a list of your repositories where ubuntu looks for packages. 
+This requires a few quick commands:
+
+1. First update your packages in the server
+
+```{r, eval=F}
+sudo apt-get update
+sudo apt-get upgrade
+```
+
+2. Install a package that makes it easy to add repositories
+```{r, eval=F}
+sudo apt-get install software-properties-common
+```
+
+3.Install ubuntugis-unstable release (not really unstable!)
+```{r, eval=F}
+sudo add-apt-repository ppa:ubuntugis/ubuntugis-unstable
+sudo apt-get update
+sudo apt-get upgrade
+```
+
+4. Install gdal-bin (holds all gdal dependencies)
+```{r, eval=F}
+sudo apt-get install gdal-bin
+```
+
+5. Install some libraries for gdal 
+```{r, eval=F}
+sudo apt-get install libgdal1-dev
+sudo apt-get install libproj-dev
+```
+
+6. Install RGDAL and other spatial packages!
+```{r, eval=F}
+sudo su - root -c "R -e \"install.packages(c('rgdal','sp','raster'),repos='http://cran.rstudio.com/')\""
+```
+
+
+7. BONUS command to get rgdal installed on macOSX. First install gdal from [here](http://www.kyngchaos.com/software/frameworks)
+Then point rgdal to where gdal dependencies live on a Mac. 
+```{r, eval=F}
+install.packages('rgdal',configure.args=
+c("--with-gdal-config=/Library/Frameworks/GDAL.framework/Programs/gdal-config
+  --with-proj-lib=/Library/Frameworks/PROJ.framework/unix/lib
+  --with-proj-include=/Library/Frameworks/PROJ.framework/unix/include"))
+```

@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta charset="utf-8">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="pandoc" />
+
+
+
+
+<title></title>
+
+<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/cosmo.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/highlightjs-1.1/textmate.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-1.1/highlight.js"></script>
+<link href="site_libs/font-awesome-4.5.0/css/font-awesome.min.css" rel="stylesheet" />
+
+<style type="text/css">code{white-space: pre;}</style>
+<style type="text/css">
+  pre:not([class]) {
+    background-color: white;
+  }
+</style>
+<script type="text/javascript">
+if (window.hljs && document.readyState && document.readyState === "complete") {
+   window.setTimeout(function() {
+      hljs.initHighlighting();
+   }, 0);
+}
+</script>
+
+
+
+<style type="text/css">
+h1 {
+  font-size: 34px;
+}
+h1.title {
+  font-size: 38px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 16px;
+}
+h6 {
+  font-size: 12px;
+}
+.table th:not([align]) {
+  text-align: left;
+}
+</style>
+
+<link rel="stylesheet" href="approach.css" type="text/css" />
+
+</head>
+
+<body>
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+code {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+img {
+  max-width:100%;
+  height: auto;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+</style>
+
+
+<style type="text/css">
+/* padding for bootstrap navbar */
+body {
+  padding-top: 51px;
+  padding-bottom: 40px;
+}
+/* offset scroll position for anchor links (for fixed navbar)  */
+.section h1 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+
+.section h2 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h3 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h4 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h5 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h6 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+</style>
+
+<script>
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark it active
+  menuAnchor.parent().addClass('active');
+
+  // if it's got a parent navbar menu mark it active as well
+  menuAnchor.closest('li.dropdown').addClass('active');
+});
+</script>
+
+
+<div class="container-fluid main-container">
+
+<!-- tabsets -->
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+</script>
+
+<!-- code folding -->
+
+
+
+
+
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html"></a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="index.html">Home</a>
+</li>
+<li>
+  <a href="research.html">Research</a>
+</li>
+<li>
+  <a href="approach.html">Approach</a>
+</li>
+<li>
+  <a href="teaching.html">Teaching</a>
+</li>
+<li>
+  <a href="Ross-CSU-CV.pdf">CV</a>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+  <a href="http://github.com/matthewross07">
+    <span class="fa fa-github fa-lg"></span>
+     
+  </a>
+</li>
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div class="fluid-row" id="header">
+
+
+
+
+</div>
+
+
+<p><br> <br></p>
+<div id="i-like-to-work-on-broad-theoretical-ideas-paired" class="section level4">
+<h4>I like to work on broad theoretical ideas paired</h4>
+</div>
+<div id="with-analysis-and-visualization-of-water-data-from" class="section level4">
+<h4>with analysis and visualization of water data from</h4>
+</div>
+<div id="in-situ-sensors-at-field-sites-and-larger" class="section level4">
+<h4><em>in situ</em> sensors at field sites and larger</h4>
+</div>
+<div id="publically-available-spatiotemporal-datasets." class="section level4">
+<h4>publically available spatiotemporal datasets.</h4>
+</div>
+<div id="mostly-this-means-i-spend-a-lot-of-time" class="section level4">
+<h4>Mostly this means I spend a lot of time</h4>
+</div>
+<div id="programming-in-r.-in-fact-this-whole-website" class="section level4">
+<h4>programming in R. In fact this whole website</h4>
+</div>
+<div id="was-made-using-rmarkdown.-for-examples-of-my-work" class="section level4">
+<h4>was made using RMarkdown. For examples of my work</h4>
+</div>
+<div id="you-can-go-to-my-github-scroll-down" class="section level4">
+<h4>you can go to my <a href="https://github.com/matthewross07">github</a>, scroll down</h4>
+</div>
+<div id="or-look-at-my-shinyr-data-applications" class="section level4">
+<h4>or look at my ShinyR data applications:</h4>
+</div>
+<div id="mining-has-dramatically-changed-the-landscape-in-west-virginia" class="section level4">
+<h4>-<a href="http://mtm-explore.web.duke.edu/">Mining has dramatically changed the landscape in West Virginia</a></h4>
+</div>
+<div id="mining-changes-how-water-moves-through-mined-landscapes-and-water-quality" class="section level4">
+<h4>-<a href="http://mtm-hydro.web.duke.edu/">Mining changes how water moves through mined landscapes and water quality</a></h4>
+</div>
+<div id="mining-increases-weathering-rates-of-bedrock" class="section level4">
+<h4>-<a href="http://mtm-weathering.web.duke.edu/">Mining increases weathering rates of bedrock</a></h4>
+</div>
+<div id="year-record-of-watershed-biogeochemistry-at-hubbard-brook-in-progress" class="section level4">
+<h4>-<a href="http://hubbardbrook-web.duke.edu/">60 year record of watershed biogeochemistry at Hubbard Brook, in progress</a></h4>
+<p><br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br></p>
+</div>
+<div id="some-visual-examples-of-current-and-past-projects" class="section level3">
+<h3>Some visual examples of current and past projects</h3>
+<div id="gif">
+<div class="figure">
+<img src="images/MR.gif" alt="Mining progressing in Mud River, WV" />
+<p class="caption">Mining progressing in Mud River, WV</p>
+</div>
+</div>
+<p><br></p>
+<div class="figure">
+<img src="images/2.SampleAnalysis.png" alt="Dramatic changes to water chemistry in mined watersheds of West Virginia" />
+<p class="caption">Dramatic changes to water chemistry in mined watersheds of West Virginia</p>
+</div>
+<p><br></p>
+<div class="figure">
+<img src="images/design.png" alt="Thinking about design as a field that links landscape architecture, applied ecology, iphones and chairs" />
+<p class="caption">Thinking about design as a field that links landscape architecture, applied ecology, iphones and chairs</p>
+</div>
+<p><br></p>
+<div class="figure">
+<img src="images/runoff.png" alt="Mining changes hydrology and chemistry of streams, turning watersheds from stormflow dominated to baseflow dominated systems" />
+<p class="caption">Mining changes hydrology and chemistry of streams, turning watersheds from stormflow dominated to baseflow dominated systems</p>
+</div>
+</div>
+
+
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+
+</body>
+</html>

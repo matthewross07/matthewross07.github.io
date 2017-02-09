@@ -1,0 +1,20 @@
+{
+    "collab_server" : "",
+    "contents" : "---\ntitle: \"\"\noutput:\n  html_document:\n    css:  approach.css\n---\n<br>\n<br>\n\n####I like to work on broad theoretical ideas paired\n####with analysis and visualization of water data from \n#### *in situ* sensors at field sites and larger \n####publically available spatiotemporal datasets.\n####Mostly this means I spend a lot of time \n####programming in R. In fact this whole website \n####was made using RMarkdown. For examples of my work\n####you can go to my [github](https://github.com/matthewross07), scroll down\n####or look at my ShinyR data applications:\n\n####-[Mining has dramatically changed the landscape in West Virginia](http://mtm-explore.web.duke.edu/)\n####-[Mining changes how water moves through mined landscapes and water quality](http://mtm-hydro.web.duke.edu/)\n####-[Mining increases weathering rates of bedrock](http://mtm-weathering.web.duke.edu/)\n####-[60 year record of watershed biogeochemistry at Hubbard Brook, in progress](http://hubbardbrook-web.duke.edu/)\n  \n<br>\n<br>\n<br>\n<br>\n<br>\n<br>\n<br>\n<br>\n<br>\n<br>\n<br>\n<br>\n<br>\n<br>\n\n###Some visual examples of current and past projects\n<div id='gif'>\n![Mining progressing in Mud River, WV](images/MR.gif)\n</div>\n\n<br>\n\n\n![Dramatic changes to water chemistry in mined watersheds of West Virginia](images/2.SampleAnalysis.png)\n\n<br>\n\n\n![Thinking about design as a field that links landscape architecture, applied ecology, iphones and chairs](images/design.png)\n\n<br>\n\n![Mining changes hydrology and chemistry of streams, turning watersheds from stormflow dominated to baseflow dominated systems](images/runoff.png)\n\n\n\n\n",
+    "created" : 1486509212321.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1297803692",
+    "id" : "B66E7D7D",
+    "lastKnownWriteTime" : 1486507990,
+    "last_content_update" : 1486507990,
+    "path" : "~/Dropbox/Personal Website/GithubWebsite/approach.Rmd",
+    "project_path" : "approach.Rmd",
+    "properties" : {
+    },
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_markdown"
+}

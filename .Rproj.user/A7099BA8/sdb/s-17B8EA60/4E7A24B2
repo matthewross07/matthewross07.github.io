@@ -1,0 +1,20 @@
+{
+    "collab_server" : "",
+    "contents" : "body {\n  background-image:      linear-gradient(\n      rgba(0, 0, 0, 0.4),\n      rgba(0, 0, 0, 0.4)\n    ),\n    url(images/mtm_cake.jpg);\n  background-repeat: no-repeat;\n  background-size: cover;\n  height:120vh;\n}\n\n#gif{\n  size:cover;\n  background-color:white;\n}\nh1{\n  text-align:left;\n  color:white;\n  font-weight:500;\n}\n\nh3{\n  text-align:center;\n  color:white;\n  font-weight:600;\n  background-color:#7F000000;\n}\n\nh4 {\n  font-size:105%;\n  color: white;\n  font-weight: 700;\n  text-align:left;\n}\n\na:link{\n  color:SpringGreen;\n}\n\n",
+    "created" : 1480434046121.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "4245392910",
+    "id" : "4E7A24B2",
+    "lastKnownWriteTime" : 1479780832,
+    "last_content_update" : 1479780832,
+    "path" : "~/Dropbox/Personal Website/GithubWebsite/MarkdownWebsite/approach.css",
+    "project_path" : "MarkdownWebsite/approach.css",
+    "properties" : {
+    },
+    "relative_order" : 7,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "css"
+}

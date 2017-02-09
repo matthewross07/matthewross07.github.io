@@ -1,0 +1,21 @@
+---
+title: "matt.ross(at)duke.edu"
+output:
+  html_document:
+    css:  index.css
+---
+
+####Building cities, farming crops, and mining ore all have changed
+####the face of the earth. In many of these altered places, 
+####human design decisions control environmental processes 
+####more than the co-evolution of landform and ecosystem.
+####I study these human landscapes by asking:
+
+####**1) How do these designed ecosystems work?**
+
+####**2) What feedbacks are most important in structuring these places?**
+
+####**3) Can we use knowledge from 1&2 to design ecosystems better?**
+
+
+

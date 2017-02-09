@@ -1,0 +1,15 @@
+---
+title: ""
+output:
+  html_document:
+    css:  about.css
+---
+
+#### 
+####I get inspiration for my research from other parts of my life including:
+
+####A variety of excellent podcasts including radiolab, 99% invisible, and reply all
+
+####
+
+

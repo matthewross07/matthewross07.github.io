@@ -1,0 +1,20 @@
+{
+    "collab_server" : "",
+    "contents" : "---\ntitle: \"\"\noutput:\n  html_document:\n    css:  teaching.css\n---\n<br>\n<br>\n\n####For me, data wrangling, analysis, and visualization \n####are central to developing an active understanding of\n####environmental science. I use a variety of resources \n####to learn better data practices for myself\n####and try to emulate these practices in my teaching.  \n\n###General data background\n\n####-[General introduction to a set of skills useful to start programming](https://www.rstudio.com/online-learning/)\n\n####-[The tidyverse, a powerful unified way to think about data](https://blog.rstudio.org/2016/09/15/tidyverse-1-0-0/)\n\n####-[Making data visualizations using ShinyR, anything by Zev Ross is good](http://zevross.com/blog/2016/04/19/r-powered-web-applications-with-shiny-a-tutorial-and-cheat-sheet-with-40-example-apps/)\n\n###My teaching resources,[(Best used with my github account)](http://github.com/matthewross07)\n\n####-[Quick intro to R and Geospatial R](teaching/IntroGISR.html)\n\n####-[Making interactive maps in R](teaching/Leaflet_and_Other_tools.html)\n\n####-[Time series data wrangling](teaching/1.TS.Munging.html)\n\n####-[Time Series Merging](teaching/2.TS.Data.Combine.html)\n\n####-[Useful R Package introduction](teaching/Useful.Packages.html)",
+    "created" : 1480432814350.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "562388057",
+    "id" : "1BD835D6",
+    "lastKnownWriteTime" : 1480436912,
+    "last_content_update" : 1480436912744,
+    "path" : "~/Dropbox/Personal Website/GithubWebsite/MarkdownWebsite/teaching.Rmd",
+    "project_path" : "MarkdownWebsite/teaching.Rmd",
+    "properties" : {
+    },
+    "relative_order" : 5,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_markdown"
+}
