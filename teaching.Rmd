@@ -37,3 +37,5 @@ output:
 ####-[Time Series Merging](teaching/2.TS.Data.Combine.html)
 
 ####-[Useful R Package introduction](teaching/Useful.Packages.html)
+
+####-[Teaching Module on Water Quality](teaching/BlueRiverWatershed.html)
