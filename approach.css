@@ -1,18 +1,20 @@
 body {
-  background-image:      linear-gradient(
+  background:      linear-gradient(
       rgba(0, 0, 0, 0.4),
       rgba(0, 0, 0, 0.4)
     ),
-    url(images/mtm_cake.jpg);
-  background-repeat: no-repeat;
+    url(images/mtm_cake.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
-  height:120vh;
 }
 
 #gif{
   size:cover;
   background-color:white;
 }
+
 h1{
   text-align:left;
   color:white;
@@ -37,3 +39,7 @@ a:link{
   color:SpringGreen;
 }
 
+.caption {
+  color:#00D5FF;
+  font-weight:700;
+}

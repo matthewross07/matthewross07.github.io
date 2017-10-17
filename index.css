@@ -1,16 +1,13 @@
 body {
-  background-image:
-      linear-gradient(
-      rgba(0, 0, 0, 0.2),
-      rgba(0, 0, 0, 0.2)
-    ),
-    url(images/NZ.jpg);
-  background-repeat: no-repeat;
+  background: url(images/NZ.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
 }
 
-h1 {
-  color: white;
+h1{
+  color:white;
 }
 
 h2 {
@@ -27,3 +24,16 @@ h4 {
   text-align:left;
 }
 
+h5 {
+  color:white;
+  font-weight:500;
+  font-style:italic;
+}
+
+a:link{
+  color:SpringGreen;
+}
+
+a:visited{
+  color:#00D5FF;
+}

@@ -1,13 +1,14 @@
 body {
-  background-image:
+  background:
       linear-gradient(
       rgba(0, 0, 0, 0.2),
       rgba(0, 0, 0, 0.2)
     ),
-    url(images/CoalTruck.jpg);
-  background-repeat: no-repeat;
+    url(images/CoalTruck.jpg)no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
-  height:100vh;
 }
 
 h1{

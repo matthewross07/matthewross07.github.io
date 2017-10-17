@@ -10,9 +10,9 @@ output:
 ####Understanding current problems in ecosystem science
 ####requires interdiscplinary knowledge of social,
 ####ecological, and legal systems that structure our world.
-####In my teaching, data wrangling, analysis,
+####In my teaching, I think data wrangling, analysis,
 ####and visualization are central to developing a
-####practical understanding of how these interacting systems
+####practical understanding of how these systems
 ####create land-use change, alter water quality, and 
 ####reshape landscapes. As such, data is core to my teaching
 ####practice and some introductory information is available here:
