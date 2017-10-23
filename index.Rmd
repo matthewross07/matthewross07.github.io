@@ -20,8 +20,8 @@ output:
 #####  The point is that if we are going to design ecosystems,
 #####  and we continually do so whether we care to face
 #####  all of the implications or not, then it will be best
-#####  to design them intentionally,
-#####  making use of all the ecological understanding we can bring to bear.
+#####  to design them intentionally, making use of all 
+#####  the ecological understanding we can bring to bear.
 
 <br>
 
