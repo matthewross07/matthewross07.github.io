@@ -12,7 +12,7 @@ output:
 ####with Tamlin Pavelsky's [Global Hydrology Lab.](http://www.unc.edu/~pavelsky/Pavelsky/Home.html)
 ####In August 2018, I will start as an assistant professor at
 ####Colorado State's [Ecosystem Science and Sustainability department](https://warnercnr.colostate.edu/ess/).
-####My broadest research goals are best captures by a quote from
+####My broadest research goals are best captured by a quote from
 ####John Tillman Lyle in 1985 when he said: 
 
 <br>
