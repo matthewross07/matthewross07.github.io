@@ -21,6 +21,8 @@ navbar:
       href: teaching.html
     - text: "CV"
       href: Ross-CSU-CV.pdf
+    - text: 'Updates'
+      href: active.html
   right:
     - icon: fa-github fa-lg 
       href: http://github.com/matthewross07 
