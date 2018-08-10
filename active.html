@@ -11,7 +11,7 @@
 
 
 
-<title>The cost of keeping large groups… grouped!</title>
+<title>The cost of keeping lots of groups… grouped!</title>
 
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -213,7 +213,7 @@ $(document).ready(function () {
 
 
 
-<h1 class="title toc-ignore">The cost of keeping large groups… grouped!</h1>
+<h1 class="title toc-ignore">The cost of keeping lots of groups… grouped!</h1>
 <h4 class="author"><em><div style="white-space: pre-line;">Matthew Ross
 Colorado State University</div></em></h4>
 <h4 class="date"><em>8/10/2018</em></h4>
@@ -242,7 +242,7 @@ df &lt;- tibble(groups=rep(groups,each=100)) %&gt;%
     filter(random_value == max_value)
 })</code></pre>
 <pre><code>##    user  system elapsed 
-##  12.034   0.012  12.047</code></pre>
+##  12.256   0.008  12.264</code></pre>
 </div>
 <div id="finally-lets-run-the-same-operation-but-first-ungrouping-the-data" class="section level2">
 <h2>Finally let’s run the same operation but first ungrouping the data</h2>
@@ -254,7 +254,7 @@ df &lt;- tibble(groups=rep(groups,each=100)) %&gt;%
     filter(random_value == max_value)
 })</code></pre>
 <pre><code>##    user  system elapsed 
-##   0.206   0.008   0.214</code></pre>
+##   0.210   0.012   0.222</code></pre>
 <p>It runs almost 100x faster if you first ungroup. If you are doing analyses with 1000s of groups your workflow may benefit from more scrupulous ungrouping.</p>
 </div>
 

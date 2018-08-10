@@ -1,5 +1,5 @@
 ---
-title: "The cost of keeping large groups... grouped!"
+title: "The cost of keeping lots of groups... grouped!"
 author: |
   | Matthew Ross
   | Colorado State University
