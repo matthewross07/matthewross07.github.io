@@ -242,7 +242,7 @@ df &lt;- tibble(groups=rep(groups,each=100)) %&gt;%
     filter(random_value == max_value)
 })</code></pre>
 <pre><code>##    user  system elapsed 
-##  12.256   0.008  12.264</code></pre>
+##  12.370   0.007  12.381</code></pre>
 </div>
 <div id="finally-lets-run-the-same-operation-but-first-ungrouping-the-data" class="section level2">
 <h2>Finally let’s run the same operation but first ungrouping the data</h2>
@@ -254,8 +254,9 @@ df &lt;- tibble(groups=rep(groups,each=100)) %&gt;%
     filter(random_value == max_value)
 })</code></pre>
 <pre><code>##    user  system elapsed 
-##   0.210   0.012   0.222</code></pre>
+##   0.212   0.012   0.224</code></pre>
 <p>It runs almost 100x faster if you first ungroup. If you are doing analyses with 1000s of groups your workflow may benefit from more scrupulous ungrouping.</p>
+<p>Or as it turns out change your code to use <code>data.table</code>. This is a well-documented advantage of data.table over dplyr as shown <a href="https://github.com/Rdatatable/data.table/wiki/Benchmarks-%3A-Grouping">here</a></p>
 </div>
 
 

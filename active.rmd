@@ -59,3 +59,6 @@ system.time({
 ```
 
 It runs almost 100x faster if you first ungroup. If you are doing analyses with 1000s of groups your workflow may benefit from more scrupulous ungrouping.
+
+Or as it turns out change your code to use `data.table`. This is a well-documented advantage of data.table
+over dplyr as shown [here](https://github.com/Rdatatable/data.table/wiki/Benchmarks-%3A-Grouping)

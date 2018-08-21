@@ -8,12 +8,10 @@ output:
 
 <br>
 
-####I'm an ecosystem scientist currently working at UNC Chapel Hill
-####with Tamlin Pavelsky's [Global Hydrology Lab.](http://www.unc.edu/~pavelsky/Pavelsky/Home.html)
-####In August 2018, I will start as an assistant professor at
-####Colorado State's [Ecosystem Science and Sustainability department](https://warnercnr.colostate.edu/ess/).
-####My broadest research goals are best captured by a quote from
-####John Tillman Lyle in 1985 when he said: 
+#### I'm an ecosystem/watershed scientist at Colorado State's
+#### [Ecosystem Science and Sustainability department](https://warnercnr.colostate.edu/ess/).
+#### My broadest research goals are best captured by a quote from
+#### John Tillman Lyle in 1985 when he said: 
 
 <br>
 
@@ -47,7 +45,7 @@ output:
 <br>
 
 
-```{r,echo=F,fig.width=3,include=F}
+```{r,echo=F,fig.width=1,include=F}
 knitr::include_graphics("images/csume.jpg")
 ```
 
