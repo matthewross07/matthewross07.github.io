@@ -45,7 +45,7 @@ output:
 <br>
 
 
-```{r,echo=F,fig.width=1,include=F}
-knitr::include_graphics("images/csume.jpg")
-```
+<!-- # ```{r,echo=F,fig.width=1,include=F} -->
+<!-- # knitr::include_graphics("images/csume.jpg") -->
+<!-- # ``` -->
 
