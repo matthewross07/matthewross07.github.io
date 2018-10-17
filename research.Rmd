@@ -14,10 +14,27 @@ output:
 ####  to understand how mountaintop mining for coal
 ####  has changed the [physical landscape](http://pubs.acs.org/doi/full/10.1021/acs.est.5b04532) in Central Appalachia
 ####  and how these changes lead to long-term and dramatic 
-####  shifts in hydrologic and biogeochemical regimes and changes
+####  shifts in [hydrologic](https://pubs.acs.org/doi/abs/10.1021/acs.est.7b02288) and [biogeochemical](https://agupubs.onlinelibrary.wiley.com/doi/10.1029/2017GB005798) regimes and changes
 ####  in local and regional water quality. As a post-doctoral researcher
 ####  at UNC Chapel Hill, I worked with Tamlin Pavelsky on
 ####  multi-spectral remote sensing techniques
-####  to understand water quality changes at regional to global scales
+####  to understand water quality changes at regional to global scales. 
 ####  More of my research can be found on my [Google Scholar page](https://scholar.google.com/citations?user=gsgbDNwAAAAJ&hl=en&oi=ao)
+ 
+<br>
+<br>
+
+### *Current projects I'm most excited about*
+
+<br>
+
+#### 1) Remote sensing of water quality and ecological controls on longitudinal variation in river chemistry.
+
+#### 2) Using otolith's (inner ear bones of fish) to recreate and understand historic change in 
+#### metal concentrations in lakes and reservoirs.
+
+#### 3) Understanding how people have altered chemical weathering across the globe.
+
+#### 4) Linking the combined impacts of fire, agriculture, and mining on
+####  water quality trends in the state of Colorado and the western USA. 
 

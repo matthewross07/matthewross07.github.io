@@ -1,64 +1,14 @@
 ---
-title: "The cost of keeping lots of groups... grouped!"
+title: "Recruiting a PhD student"
 author: |
   | Matthew Ross
   | Colorado State University
-date: "8/10/2018"
+date: "10/17/2018"
 output: html_document
 ---
 
+Come to Fort Collins and help me get my lab started! 
 
+I am recruiting a PhD student for fall of 2019. For now, the exact nature of the project is open, though it will likely be focused on using large open-access datasets to interrogate how people are changing the environment, especially freshwaters. I'm especially looking to work with someone interested in developing a strong background in both ecosystem ecology and data science with an eye towards using this knowledge to move the needle on how we design, restore, and/or conserve ecosystems. Some ideas for what this might look like are on my [research](research.html) page, but I'm open to other ideas. 
 
-Group_by is one of my most frequently used and favorite functions. However, with large datasets leaving data grouped (especially when you have lots of data) can come with a significant computational cost if you forget to ungroup the data between operations where you don't need it. Below is a quick example mostly as a self-reminder to check my pipelines for opportunities to ungroup data before some operations.
-
-## First let's load our packages
-```{r setup, message=F}
-library(dplyr)
-library(tibble)
-```
-
-
-## Now to illustrate this point let's first generate some random data
-
-
-```{r generate random data}
-
-groups <- 1:20000
-df <- tibble(groups=rep(groups,each=100)) %>%
-  mutate(random_value=runif(n=nrow(.),min=0,max=100000)) 
-
-
-
-```
-
-
-## Next let's calculate the max value for each group and then filter data to only keep the max for each group
-
-```{r grouped data analysis}
-
-system.time({
-  df %>%
-    group_by(groups) %>%
-    mutate(max_value=max(random_value)) %>%
-    filter(random_value == max_value)
-})
-
-```
-
-## Finally let's run the same operation but first ungrouping the data
-
-```{r ungrouped}
-system.time({
-  df %>%
-    group_by(groups) %>%
-    mutate(max_value=max(random_value)) %>%
-    ungroup() %>%
-    filter(random_value == max_value)
-})
-
-```
-
-It runs almost 100x faster if you first ungroup. If you are doing analyses with 1000s of groups your workflow may benefit from more scrupulous ungrouping.
-
-Or as it turns out change your code to use `data.table`. This is a well-documented advantage of data.table
-over dplyr as shown [here](https://github.com/Rdatatable/data.table/wiki/Benchmarks-%3A-Grouping)
+If you are interested, please contact me at mrvr(at)rams.colostate.edu

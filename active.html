@@ -10,8 +10,9 @@
 
 
 
+<meta name="date" content="2018-10-17" />
 
-<title>The cost of keeping lots of groups… grouped!</title>
+<title>Recruiting a PhD student</title>
 
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -22,7 +23,9 @@
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
 <link href="site_libs/highlightjs-9.12.0/textmate.css" rel="stylesheet" />
 <script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
-<link href="site_libs/font-awesome-4.5.0/css/font-awesome.min.css" rel="stylesheet" />
+<link href="site_libs/font-awesome-5.0.13/css/fa-svg-with-js.css" rel="stylesheet" />
+<script src="site_libs/font-awesome-5.0.13/js/fontawesome-all.min.js"></script>
+<script src="site_libs/font-awesome-5.0.13/js/fa-v4-shims.min.js"></script>
 
 <style type="text/css">code{white-space: pre;}</style>
 <style type="text/css">
@@ -90,6 +93,9 @@ img {
 }
 .tabbed-pane {
   padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
 }
 button.code-folding-btn:focus {
   outline: none;
@@ -213,51 +219,17 @@ $(document).ready(function () {
 
 
 
-<h1 class="title toc-ignore">The cost of keeping lots of groups… grouped!</h1>
-<h4 class="author"><em><div style="white-space: pre-line;">Matthew Ross
+<h1 class="title toc-ignore">Recruiting a PhD student</h1>
+<h4 class="author"><em><div class="line-block">Matthew Ross<br />
 Colorado State University</div></em></h4>
-<h4 class="date"><em>8/10/2018</em></h4>
+<h4 class="date"><em>10/17/2018</em></h4>
 
 </div>
 
 
-<p>Group_by is one of my most frequently used and favorite functions. However, with large datasets leaving data grouped (especially when you have lots of data) can come with a significant computational cost if you forget to ungroup the data between operations where you don’t need it. Below is a quick example mostly as a self-reminder to check my pipelines for opportunities to ungroup data before some operations.</p>
-<div id="first-lets-load-our-packages" class="section level2">
-<h2>First let’s load our packages</h2>
-<pre class="r"><code>library(dplyr)
-library(tibble)</code></pre>
-</div>
-<div id="now-to-illustrate-this-point-lets-first-generate-some-random-data" class="section level2">
-<h2>Now to illustrate this point let’s first generate some random data</h2>
-<pre class="r"><code>groups &lt;- 1:20000
-df &lt;- tibble(groups=rep(groups,each=100)) %&gt;%
-  mutate(random_value=runif(n=nrow(.),min=0,max=100000)) </code></pre>
-</div>
-<div id="next-lets-calculate-the-max-value-for-each-group-and-then-filter-data-to-only-keep-the-max-for-each-group" class="section level2">
-<h2>Next let’s calculate the max value for each group and then filter data to only keep the max for each group</h2>
-<pre class="r"><code>system.time({
-  df %&gt;%
-    group_by(groups) %&gt;%
-    mutate(max_value=max(random_value)) %&gt;%
-    filter(random_value == max_value)
-})</code></pre>
-<pre><code>##    user  system elapsed 
-##  12.370   0.007  12.381</code></pre>
-</div>
-<div id="finally-lets-run-the-same-operation-but-first-ungrouping-the-data" class="section level2">
-<h2>Finally let’s run the same operation but first ungrouping the data</h2>
-<pre class="r"><code>system.time({
-  df %&gt;%
-    group_by(groups) %&gt;%
-    mutate(max_value=max(random_value)) %&gt;%
-    ungroup() %&gt;%
-    filter(random_value == max_value)
-})</code></pre>
-<pre><code>##    user  system elapsed 
-##   0.212   0.012   0.224</code></pre>
-<p>It runs almost 100x faster if you first ungroup. If you are doing analyses with 1000s of groups your workflow may benefit from more scrupulous ungrouping.</p>
-<p>Or as it turns out change your code to use <code>data.table</code>. This is a well-documented advantage of data.table over dplyr as shown <a href="https://github.com/Rdatatable/data.table/wiki/Benchmarks-%3A-Grouping">here</a></p>
-</div>
+<p>Come to Fort Collins and help me get my lab started!</p>
+<p>I am recruiting a PhD student for fall of 2019. For now, the exact nature of the project is open, though it will likely be focused on using large open-access datasets to interrogate how people are changing the environment, especially freshwaters. I’m especially looking to work with someone interested in developing a strong background in both ecosystem ecology and data science with an eye towards using this knowledge to move the needle on how we design, restore, and/or conserve ecosystems. Some ideas for what this might look like are on my <a href="research.html">research</a> page, but I’m open to other ideas.</p>
+<p>If you are interested, please contact me at mrvr(at)rams.colostate.edu</p>
 
 
 
