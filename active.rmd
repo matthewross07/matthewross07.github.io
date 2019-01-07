@@ -1,16 +1,71 @@
 ---
-title: "Recruiting a PhD student"
+title: "Keep information from original dataset after a mapEdit in R"
 author: |
   | Matthew Ross
   | Colorado State University
 date: "10/17/2018"
-output: html_document
+output:
+  pdf_document: default
+  html_document: default
+editor_options:
+  chunk_output_type: console
 ---
 
-Come to Fort Collins and help me get my lab started! 
+```{r,setup}
 
-I am recruiting a PhD student for fall of 2019. For now, the exact nature of the project is open, though it will likely be focused on using large open-access datasets to interrogate how people are changing the environment, especially freshwaters. I'm especially looking to work with someone interested in developing a strong background in both ecosystem ecology and data science with an eye towards using this knowledge to move the needle on how we design, restore, and/or conserve ecosystems. Ideally, this student would have a master's or previous work experience in data science and/or ecosystem ecology. 
+knitr::opts_chunk$set(echo=FALSE, warning=FALSE, message=FALSE)
+```
 
-Some ideas for what this might look like are on my [research](research.html) page, but I'm open to other kinds of work. 
 
-If you are interested, please contact me at mrvr(at)rams.colostate.edu
+I'm trying to snap points to a network (like roads or streams). Because many points need to be manually checked when snapping, it is easiest to just do this manually and use site metadata to determine where points should be moved to sit on the network. I'm hoping to do this all in R, but as far as I can tell the excellent package `mapedit` does not allow you to edit an exisiting feature and keep the original features' data (like an ID). This makes editing with `mapedit` less useful because I can see no way to join the snapped points back to their original information (other than a clunky spatial join, that would introduce as many problems as solutions).
+
+Is this behavior expected? Am I doing something really simple that makes this not work? Any other R solutions that folks know of? 
+
+
+# Simple example 
+
+## Making up data
+```{r}
+library(sf)
+library(mapview)
+library(mapedit)
+library(tidyverse)
+
+#Make up some data near a road.
+#I want to snap this data to the road
+
+untethered <- tibble(lat=c(35,35.005),
+               long=c(-80,-80.0001),
+               id=c(1,2),
+               road_name=c(1711,1712)) %>%
+  st_as_sf(.,coords=c('long','lat'),crs=4326)
+
+untethered
+```
+
+## Map raw data
+```{r}
+#Snap the raw data to the road names
+map <- mapview(untethered)
+
+map
+```
+
+## Snapping points
+```{r,eval=F}
+#Move points 
+manually.snapped <- editMap(map,targetLayerId='untethered')
+save(manually.snapped,file='snapped.RData')
+```
+
+## Check data
+```{r}
+load('snapped.RData')
+mapview(manually.snapped$edited)
+
+manually.snapped$edited
+```
+
+# Problem
+
+How do I join the `manually.snapped` data back to the `untethered` data without a spatial join?
