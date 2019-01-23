@@ -1,9 +1,9 @@
 ---
-title: "Keep information from original dataset after a mapEdit in R"
+title: "Updating"
 author: |
   | Matthew Ross
   | Colorado State University
-date: "10/17/2018"
+date: "1/22/2018"
 output:
   html_document: default
   pdf_document: default
@@ -11,106 +11,4 @@ editor_options:
   chunk_output_type: console
 ---
 
-```{r,setup}
-
-knitr::opts_chunk$set(echo=T, warning=FALSE, message=FALSE)
-```
-
-
-I'm trying to snap points to a network (like roads or streams). Because many points need to be manually checked when snapping, it is easiest to just do this manually and use site metadata to determine where points should be moved to sit on the network. I'm hoping to do this all in R, but as far as I can tell the excellent package `mapedit` does not allow you to edit an exisiting feature and keep the original features' data (like an ID). This makes editing with `mapedit` less useful because I can see no way to join the snapped points back to their original information (other than a clunky spatial join, that would introduce as many problems as solutions).
-
-Is this behavior expected? Am I doing something really simple that makes this not work? Any other R solutions that folks know of? 
-
-
-# Simple example 
-
-## Making up data
-```{r}
-library(sf)
-library(mapview)
-library(mapedit)
-library(raster)
-library(tidyverse)
-library(stars)
-
-#Make up some data near a road.
-#I want to snap this data to the road
-
-untethered <- tibble(lat=c(35,35.005),
-               long=c(-80,-80.0001),
-               id=c(1,2),
-               road_name=c(1711,1712)) %>%
-  st_as_sf(.,coords=c('long','lat'),crs=4326)
-
-untethered
-```
-
-## Map raw data
-```{r}
-#Snap the raw data to the road names
-map <- mapview(untethered)
-
-map
-```
-
-## Snapping points
-```{r,eval=F}
-
-#Old way that didn't preserve information
-#manually.snapped <- editMap(untethered,targetLayerId='untethered')
-#Move points 
-manually.snapped <- editFeatures(untethered)
-manually.snapped
-
-save(manually.snapped,file='snapped.RData')
-```
-
-## Check data
-
-This works now with the `editFeatures` replacement. 
-```{r}
-load('snapped.RData')
-mapview(manually.snapped$edited)
-
-manually.snapped$edited
-```
-
-
-
-## Snapping points with a different background map.
-
-The above fix worked for this small example, but I was really trying to snap 
-data to a raster and when you add a background map to the editFeatures call
-you lose the ability to move the points around. I think this is the real problem
-now that I see it more clearly. 
-
-Raster creation code taken from [here](https://gis.stackexchange.com/questions/273233/create-spatial-polygon-grid-from-spatial-points-in-r)
-
-
-```{r}
-
-st_bbox(untethered)
-r <- raster(ext=extent(c(-80.002,-80,35,35.0050)),res=c(0.0005,.0005))
-values(r) <- 1:ncell(r)
-
-# Add an originals layer so I can see which points have been moved. 
-originals <- untethered
-bg.map <- mapview(r,maxpixels=10^10,na.color=NA) + 
-  mapview(untethered) + 
-  mapview(originals,zcol='road_name',legend=F)
-
-bg.map
-```
-
-Now we have a map with a background raster
-
-```{r}
-snapped.points2 <- editFeatures(untethered,map=bg.map)
-
-
-```
-
-
-# Problem
-
-How do I join the `manually.snapped` data back to the `untethered` data without a spatial join?
+I'm in the middle of updating... my updates. Remaking this as a page that holds all previous updates not just rewritten each time. 
