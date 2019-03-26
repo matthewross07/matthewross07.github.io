@@ -22,9 +22,8 @@
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
 <link href="site_libs/highlightjs-9.12.0/textmate.css" rel="stylesheet" />
 <script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
-<link href="site_libs/font-awesome-5.0.13/css/fa-svg-with-js.css" rel="stylesheet" />
-<script src="site_libs/font-awesome-5.0.13/js/fontawesome-all.min.js"></script>
-<script src="site_libs/font-awesome-5.0.13/js/fa-v4-shims.min.js"></script>
+<link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
+<link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
 
 <style type="text/css">code{white-space: pre;}</style>
 <style type="text/css">
@@ -100,6 +99,9 @@ img {
 button.code-folding-btn:focus {
   outline: none;
 }
+summary {
+  display: list-item;
+}
 </style>
 
 
@@ -114,7 +116,6 @@ body {
   padding-top: 56px;
   margin-top: -56px;
 }
-
 .section h2 {
   padding-top: 56px;
   margin-top: -56px;
@@ -134,6 +135,43 @@ body {
 .section h6 {
   padding-top: 56px;
   margin-top: -56px;
+}
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown-submenu>a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #cccccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+.dropdown-submenu:hover>a:after {
+  border-left-color: #ffffff;
+}
+.dropdown-submenu.pull-left {
+  float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  border-radius: 6px 0 6px 6px;
 }
 </style>
 
@@ -155,18 +193,77 @@ $(document).ready(function () {
 });
 </script>
 
-
 <div class="container-fluid main-container">
 
 <!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "&#xe258;";
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
 <script>
 $(document).ready(function () {
   window.buildTabsets("TOC");
 });
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open')
+  });
+});
 </script>
 
 <!-- code folding -->
-
 
 
 
@@ -227,18 +324,66 @@ $(document).ready(function () {
 
 
 <p><br> <br></p>
-<p>####Understanding current problems in ecosystem science ####requires interdiscplinary knowledge of social, ####ecological, and legal systems that structure our world. ####In my teaching, I think data wrangling, analysis, ####and visualization are central to developing a ####practical understanding of how these systems ####create land-use change, alter water quality, and ####reshape landscapes. As such, data is core to my teaching ####practice and some introductory information is available here:</p>
-<p>###General data background</p>
-<p>####-<a href="https://www.rstudio.com/online-learning/">General introduction to a set of skills useful to start programming</a></p>
-<p>####-<a href="https://blog.rstudio.org/2016/09/15/tidyverse-1-0-0/">The tidyverse, a powerful unified way to think about data</a></p>
-<p>####-<a href="http://zevross.com/blog/2016/04/19/r-powered-web-applications-with-shiny-a-tutorial-and-cheat-sheet-with-40-example-apps/">Making data visualizations using ShinyR, anything by Zev Ross is good</a></p>
-<p>###My teaching resources,<a href="http://github.com/matthewross07">(Best used with my github account)</a></p>
-<p>####-<a href="teaching/IntroGISR.html">Quick intro to R and Geospatial R</a></p>
-<p>####-<a href="teaching/Leaflet_and_Other_tools.html">Making interactive maps in R</a></p>
-<p>####-<a href="teaching/1.TS.Munging.html">Time series data wrangling</a></p>
-<p>####-<a href="teaching/2.TS.Data.Combine.html">Time Series Merging</a></p>
-<p>####-<a href="teaching/Useful.Packages.html">Useful R Package introduction</a></p>
-<p>####-<a href="teaching/BlueRiverWatershed.html">Teaching Module on Water Quality</a></p>
+<div id="understanding-current-problems-in-ecosystem-science" class="section level4">
+<h4>Understanding current problems in ecosystem science</h4>
+</div>
+<div id="requires-interdiscplinary-knowledge-of-social" class="section level4">
+<h4>requires interdiscplinary knowledge of social,</h4>
+</div>
+<div id="ecological-and-legal-systems-that-structure-our-world." class="section level4">
+<h4>ecological, and legal systems that structure our world.</h4>
+</div>
+<div id="in-my-teaching-i-think-data-wrangling-analysis" class="section level4">
+<h4>In my teaching, I think data wrangling, analysis,</h4>
+</div>
+<div id="and-visualization-are-central-to-developing-a" class="section level4">
+<h4>and visualization are central to developing a</h4>
+</div>
+<div id="practical-understanding-of-how-these-systems" class="section level4">
+<h4>practical understanding of how these systems</h4>
+</div>
+<div id="create-land-use-change-alter-water-quality-and" class="section level4">
+<h4>create land-use change, alter water quality, and</h4>
+</div>
+<div id="reshape-landscapes.-as-such-data-is-core-to-my-teaching" class="section level4">
+<h4>reshape landscapes. As such, data is core to my teaching</h4>
+</div>
+<div id="practice-and-some-introductory-information-is-available-here" class="section level4">
+<h4>practice and some introductory information is available here:</h4>
+</div>
+<div id="general-data-background" class="section level3">
+<h3>General data background</h3>
+<div id="general-introduction-to-a-set-of-skills-useful-to-start-programming" class="section level4">
+<h4>-<a href="https://www.rstudio.com/online-learning/">General introduction to a set of skills useful to start programming</a></h4>
+</div>
+<div id="the-tidyverse-a-powerful-unified-way-to-think-about-data" class="section level4">
+<h4>-<a href="https://blog.rstudio.org/2016/09/15/tidyverse-1-0-0/">The tidyverse, a powerful unified way to think about data</a></h4>
+</div>
+<div id="making-data-visualizations-using-shinyr-anything-by-zev-ross-is-good" class="section level4">
+<h4>-<a href="http://zevross.com/blog/2016/04/19/r-powered-web-applications-with-shiny-a-tutorial-and-cheat-sheet-with-40-example-apps/">Making data visualizations using ShinyR, anything by Zev Ross is good</a></h4>
+</div>
+</div>
+<div id="my-teaching-resourcesbest-used-with-my-github-account" class="section level3">
+<h3>My teaching resources,<a href="http://github.com/matthewross07">(Best used with my github account)</a></h3>
+<div id="quick-intro-to-r-and-geospatial-r" class="section level4">
+<h4>-<a href="teaching/IntroGISR.html">Quick intro to R and Geospatial R</a></h4>
+</div>
+<div id="making-interactive-maps-in-r" class="section level4">
+<h4>-<a href="teaching/Leaflet_and_Other_tools.html">Making interactive maps in R</a></h4>
+</div>
+<div id="time-series-data-wrangling" class="section level4">
+<h4>-<a href="teaching/1.TS.Munging.html">Time series data wrangling</a></h4>
+</div>
+<div id="time-series-merging" class="section level4">
+<h4>-<a href="teaching/2.TS.Data.Combine.html">Time Series Merging</a></h4>
+</div>
+<div id="useful-r-package-introduction" class="section level4">
+<h4>-<a href="teaching/Useful.Packages.html">Useful R Package introduction</a></h4>
+</div>
+<div id="teaching-module-on-water-quality" class="section level4">
+<h4>-<a href="teaching/BlueRiverWatershed.html">Teaching Module on Water Quality</a></h4>
+</div>
+</div>
 
 
 

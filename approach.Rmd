@@ -16,12 +16,12 @@ output:
 ####  You can go to my [github](https://github.com/matthewross07) to see more of my work, 
 ####  scroll through the images below, or look at my ShinyR data applications:
 
-####-[Mining has dramatically changed the landscape in West Virginia](http://mtm-explore.web.duke.edu/)
-####-[Mining changes how water moves through mined landscapes and water quality](http://mtm-hydro.web.duke.edu/)
-####-[Mining increases weathering rates of bedrock](http://mtm-weathering.web.duke.edu/)
-####-[60 year record of watershed biogeochemistry at Hubbard Brook, in progress](http://hbef.streampulse.org/)
-####- [Introductory environmental science course material](http://env102.web.duke.edu/)
-####- [Looking at changes in watershed chemistry in the Blue River Watershed, CO](http://bluewatershed.web.duke.edu/)
+#### -[Mining has dramatically changed the landscape in West Virginia](http://mtm-explore.web.duke.edu/)
+#### -[Mining changes how water moves through mined landscapes and water quality](http://mtm-hydro.web.duke.edu/)
+#### -[Mining increases weathering rates of bedrock](http://mtm-weathering.web.duke.edu/)
+#### -[60 year record of watershed biogeochemistry at Hubbard Brook, in progress](http://hbef.streampulse.org/)
+#### - [Introductory environmental science course material](http://env102.web.duke.edu/)
+#### - [Looking at changes in watershed chemistry in the Blue River Watershed, CO](http://bluewatershed.web.duke.edu/)
   
 <br>
 <br>

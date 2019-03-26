@@ -7,35 +7,35 @@ output:
 <br>
 <br>
 
-####Understanding current problems in ecosystem science
-####requires interdiscplinary knowledge of social,
-####ecological, and legal systems that structure our world.
-####In my teaching, I think data wrangling, analysis,
-####and visualization are central to developing a
-####practical understanding of how these systems
-####create land-use change, alter water quality, and 
-####reshape landscapes. As such, data is core to my teaching
-####practice and some introductory information is available here:
+#### Understanding current problems in ecosystem science
+#### requires interdiscplinary knowledge of social,
+#### ecological, and legal systems that structure our world.
+#### In my teaching, I think data wrangling, analysis,
+#### and visualization are central to developing a
+#### practical understanding of how these systems
+#### create land-use change, alter water quality, and 
+#### reshape landscapes. As such, data is core to my teaching
+#### practice and some introductory information is available here:
 
 
-###General data background
+### General data background
 
-####-[General introduction to a set of skills useful to start programming](https://www.rstudio.com/online-learning/)
+#### -[General introduction to a set of skills useful to start programming](https://www.rstudio.com/online-learning/)
 
-####-[The tidyverse, a powerful unified way to think about data](https://blog.rstudio.org/2016/09/15/tidyverse-1-0-0/)
+#### -[The tidyverse, a powerful unified way to think about data](https://blog.rstudio.org/2016/09/15/tidyverse-1-0-0/)
 
-####-[Making data visualizations using ShinyR, anything by Zev Ross is good](http://zevross.com/blog/2016/04/19/r-powered-web-applications-with-shiny-a-tutorial-and-cheat-sheet-with-40-example-apps/)
+#### -[Making data visualizations using ShinyR, anything by Zev Ross is good](http://zevross.com/blog/2016/04/19/r-powered-web-applications-with-shiny-a-tutorial-and-cheat-sheet-with-40-example-apps/)
 
-###My teaching resources,[(Best used with my github account)](http://github.com/matthewross07)
+### My teaching resources,[(Best used with my github account)](http://github.com/matthewross07)
 
-####-[Quick intro to R and Geospatial R](teaching/IntroGISR.html)
+#### -[Quick intro to R and Geospatial R](teaching/IntroGISR.html)
 
-####-[Making interactive maps in R](teaching/Leaflet_and_Other_tools.html)
+#### -[Making interactive maps in R](teaching/Leaflet_and_Other_tools.html)
 
-####-[Time series data wrangling](teaching/1.TS.Munging.html)
+#### -[Time series data wrangling](teaching/1.TS.Munging.html)
 
-####-[Time Series Merging](teaching/2.TS.Data.Combine.html)
+#### -[Time Series Merging](teaching/2.TS.Data.Combine.html)
 
-####-[Useful R Package introduction](teaching/Useful.Packages.html)
+#### -[Useful R Package introduction](teaching/Useful.Packages.html)
 
-####-[Teaching Module on Water Quality](teaching/BlueRiverWatershed.html)
+#### -[Teaching Module on Water Quality](teaching/BlueRiverWatershed.html)
