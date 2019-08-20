@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>2 Approach | WR-674 Data Issues in Hydrology (but really environmental science generally)</title>
+  <meta name="description" content="2 Approach | WR-674 Data Issues in Hydrology (but really environmental science generally)" />
+  <meta name="generator" content="bookdown 0.12 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="2 Approach | WR-674 Data Issues in Hydrology (but really environmental science generally)" />
+  <meta property="og:type" content="book" />
+  
+  
+  
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="2 Approach | WR-674 Data Issues in Hydrology (but really environmental science generally)" />
+  
+  
+  
+
+<meta name="author" content="Dr. Matthew Ross" />
+<meta name="author" content="matt.ross(at)colostate.edu" />
+<meta name="author" content="Office Hours: W,F 10:00-11:00 AM" />
+
+
+<meta name="date" content="2019-08-20" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="environmental-data-science.html">
+
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+
+
+
+
+
+
+
+<script src="libs/kePrint-0.0.1/kePrint.js"></script>
+
+
+
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li class="part"><span><b>I Syllabus</b></span></li>
+<li class="chapter" data-level="1" data-path="environmental-data-science.html"><a href="environmental-data-science.html"><i class="fa fa-check"></i><b>1</b> Environmental Data Science</a><ul>
+<li class="chapter" data-level="1.1" data-path="environmental-data-science.html"><a href="environmental-data-science.html#course-goals"><i class="fa fa-check"></i><b>1.1</b> Course Goals</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="approach.html"><a href="approach.html"><i class="fa fa-check"></i><b>2</b> Approach</a><ul>
+<li class="chapter" data-level="2.1" data-path="approach.html"><a href="approach.html#assignments"><i class="fa fa-check"></i><b>2.1</b> Assignments</a></li>
+<li class="chapter" data-level="2.2" data-path="approach.html"><a href="approach.html#asking-for-help-and-code-on-the-internet"><i class="fa fa-check"></i><b>2.2</b> Asking for help and code on the internet:</a><ul>
+<li class="chapter" data-level="2.2.1" data-path="approach.html"><a href="approach.html#using-other-peoples-code"><i class="fa fa-check"></i><b>2.2.1</b> Using other people’s code</a></li>
+</ul></li>
+<li class="chapter" data-level="2.3" data-path="approach.html"><a href="approach.html#attendance"><i class="fa fa-check"></i><b>2.3</b> Attendance</a></li>
+<li class="chapter" data-level="2.4" data-path="approach.html"><a href="approach.html#grading"><i class="fa fa-check"></i><b>2.4</b> Grading</a></li>
+<li class="chapter" data-level="2.5" data-path="approach.html"><a href="approach.html#schedule"><i class="fa fa-check"></i><b>2.5</b> Schedule</a></li>
+<li class="chapter" data-level="2.6" data-path="approach.html"><a href="approach.html#academic-integrity"><i class="fa fa-check"></i><b>2.6</b> Academic integrity</a></li>
+</ul></li>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">WR-674 Data Issues in Hydrology (but really environmental science generally)</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="approach" class="section level1">
+<h1><span class="header-section-number">2</span> Approach</h1>
+<p>Programming languages are just that, languages. As such, the best way to learn R
+or any language is to fully commit to the language and do everything you can
+to see it most days of the week for at least half an hour (ideally more). This
+can be as easy as trying to write all your homeworks for other classes in R and/or
+RMarkdown or as committed as only writing everything in R: emails, your personal
+website, shopping lists, etc… The idea here is immersion, into the language,
+ways of asking for help, the community, and more! I promise this immersive
+approach will help in the short and long run. This is primary a coding class
+and any statistical work we do will be guided by you, not me. Later if you
+take a stats class, hopefully the coding part will be a breeze!</p>
+<p>To encourage this embedded approach, we will have an inclusive classroom:
+respecting and valuing the diverse backgrounds, perspectives, and identities
+of individuals in the class. Students are expected to have an awareness of and
+sensitivity to language or actions that may be exclusionary or alienating. I
+am committed to fostering a collaborative and inclusive class and appreciate
+any feedback on how to improve my own practice.<br />
+This is particularly important in a class that will have group work,
+peer grading, and a large range in R fluency. We all get better if we work
+together! Some of the best R training available come from groups with explicit
+inclusivity goals and I think that is what makes this language and community
+great. I encourage you to check out <a href="https://rladies.org/about-us/">RLadies</a>.
+A final note on treatment of others, one of the most important things when
+interacting with others who have more or less coding experience than you is to
+learn how to ask effective questions that show you understand and value
+other people’s time. We will learn explicitly how to do this in the R
+community, but it is also a good general principal to keep in mind: what work
+can I do to prepare my question in a way that makes it easiest for someone to
+help me? I want you to ask questions and work collaboratively and do so in a way
+that helps you and everyone else!</p>
+<p>Finally the majority of the class will be “flipped,” with lectures delivered
+online before class and class time devoted to coding. Learning to code requires
+coding and we will try to spend the majority of class time doing assignments,
+group work, and live coding problem sets. Before class you will be expected to
+watch short lectures on YouTube that will be posted at least 4 days before class,
+these videos will generally be less than 20 minutes and geared directly towards
+the material we will work on in class. It is vital that you do this work before
+class and I will think of ways to check if needed (I hope not in a grad class!)</p>
+<div id="assignments" class="section level2">
+<h2><span class="header-section-number">2.1</span> Assignments</h2>
+<p>All assignments will be distributed through GitHub</p>
+</div>
+<div id="asking-for-help-and-code-on-the-internet" class="section level2">
+<h2><span class="header-section-number">2.2</span> Asking for help and code on the internet:</h2>
+<p>One of the most common ways people learn to code is to use the age-old
+(maybe 10 years) technique of asking the internet for help. This is a great idea!
+But! When you do you should ask for help in specific ways that enable people
+to answer your question more easily and clearly. Great instructions are here:
+<a href="https://blog.revolutionanalytics.com/2014/01/how-to-ask-for-r-help.html" class="uri">https://blog.revolutionanalytics.com/2014/01/how-to-ask-for-r-help.html</a>
+and a more general guide to hlep in R is here:
+<a href="https://www.r-project.org/help.html" class="uri">https://www.r-project.org/help.html</a>.</p>
+<div id="using-other-peoples-code" class="section level3">
+<h3><span class="header-section-number">2.2.1</span> Using other people’s code</h3>
+<p>Inevitably you will want to perform a task in R that someone else has already
+done. This is useful and part of why the R community is so great. But! If
+you use other people’s code, you should:</p>
+<ol style="list-style-type: lower-alpha">
+<li><p>explitly cite where you got the code or the inspiration for it</p></li>
+<li><p>work hard to understand the code and what it does, break it down into
+pieces and try to rebuild it</p></li>
+</ol>
+<p>Code that you did not write and is not cited will be treated as academic
+plagiarism. Assignments will vary in how much code is allowed to be shared
+between students, but the general rule is that you should be submitting your own
+code or code from your own team. As an example of best practices, a lot of the
+inspiration for this page (and the class in general) comes from Mine Cetikaya-Rundel
+and her amazing <a href="http://www2.stat.duke.edu/courses/Spring18/Sta199/policies/">STA 199</a>
+course at Duke</p>
+</div>
+</div>
+<div id="attendance" class="section level2">
+<h2><span class="header-section-number">2.3</span> Attendance</h2>
+<p>This class will heavily depend on you being present.
+There will be a participation grade that will reflect a combination of
+your consistent presence, focus in class, and participation in group work.</p>
+</div>
+<div id="grading" class="section level2">
+<h2><span class="header-section-number">2.4</span> Grading</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align:left;">
+Assignments
+</th>
+<th style="text-align:left;">
+Final
+</th>
+<th style="text-align:left;">
+Participation
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+60%
+</td>
+<td style="text-align:left;">
+30%
+</td>
+<td style="text-align:left;">
+10%
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="schedule" class="section level2">
+<h2><span class="header-section-number">2.5</span> Schedule</h2>
+<p>This schedule will likely change considerably as we move through the course,
+but I will keep it updated. Every Thursday there will be an assignment due the
+next Friday, unless otherwise stated.</p>
+<table class="table table-striped table-hover table-condensed table-responsive" style="margin-left: auto; margin-right: auto;">
+<thead>
+<tr>
+<th style="text-align:right;">
+Week
+</th>
+<th style="text-align:left;">
+Date
+</th>
+<th style="text-align:left;">
+Content
+</th>
+<th style="text-align:left;">
+Work Before Class
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:right;">
+1
+</td>
+<td style="text-align:left;">
+2019-08-27
+</td>
+<td style="text-align:left;width: 15em; ">
+R, RStudio, Packages, Data Types, and Functions
+</td>
+<td style="text-align:left;">
+<a href="https://rstudio.cloud/learn/primers/1" style="     ">Viz and Programming Primers</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+1
+</td>
+<td style="text-align:left;">
+2019-08-29
+</td>
+<td style="text-align:left;width: 15em; ">
+Projects, Organization, Git, GitHub
+</td>
+<td style="text-align:left;">
+<a href="https://happygitwithr.com/" style="     ">Happy Git With R</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+2
+</td>
+<td style="text-align:left;">
+2019-09-03
+</td>
+<td style="text-align:left;width: 15em; ">
+Manipulating Data
+</td>
+<td style="text-align:left;">
+<a href="https://rstudio.cloud/learn/primers/2" style="     ">Working with Data Primer</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+2
+</td>
+<td style="text-align:left;">
+2019-09-05
+</td>
+<td style="text-align:left;width: 15em; ">
+Tidying Data and asking for help
+</td>
+<td style="text-align:left;">
+<a href="NA" style="     "></a>
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+3
+</td>
+<td style="text-align:left;">
+2019-09-10
+</td>
+<td style="text-align:left;width: 15em; ">
+Spatial Data in R (Simple Features)
+</td>
+<td style="text-align:left;">
+<a href="NA" style="     "></a>
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+3
+</td>
+<td style="text-align:left;">
+2019-09-12
+</td>
+<td style="text-align:left;width: 15em; ">
+Spatial Data in R (Rasters)
+</td>
+<td style="text-align:left;">
+<a href="NA" style="     "></a>
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4
+</td>
+<td style="text-align:left;">
+2019-09-17
+</td>
+<td style="text-align:left;width: 15em; ">
+Visualizing Data (static)
+</td>
+<td style="text-align:left;">
+<a href="NA" style="     "></a>
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4
+</td>
+<td style="text-align:left;">
+2019-09-19
+</td>
+<td style="text-align:left;width: 15em; ">
+Visualizing Data (dynamic)
+</td>
+<td style="text-align:left;">
+<a href="NA" style="     "></a>
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+5
+</td>
+<td style="text-align:left;">
+2019-09-24
+</td>
+<td style="text-align:left;width: 15em; ">
+Writing functions
+</td>
+<td style="text-align:left;">
+<a href="NA" style="     "></a>
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+5
+</td>
+<td style="text-align:left;">
+2019-09-26
+</td>
+<td style="text-align:left;width: 15em; ">
+Iterating, nesting, purrring
+</td>
+<td style="text-align:left;">
+<a href="NA" style="     "></a>
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+6
+</td>
+<td style="text-align:left;">
+2019-10-01
+</td>
+<td style="text-align:left;width: 15em; ">
+Generating Dynamic Reports
+</td>
+<td style="text-align:left;">
+<a href="NA" style="     "></a>
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+6
+</td>
+<td style="text-align:left;">
+2019-10-03
+</td>
+<td style="text-align:left;width: 15em; ">
+Writing Papers in Rmarkdown (w/ Latex)
+</td>
+<td style="text-align:left;">
+<a href="NA" style="     "></a>
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+7
+</td>
+<td style="text-align:left;">
+2019-10-08
+</td>
+<td style="text-align:left;width: 15em; ">
+Real data analysis example 1
+</td>
+<td style="text-align:left;">
+<a href="NA" style="     "></a>
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+7
+</td>
+<td style="text-align:left;">
+2019-10-10
+</td>
+<td style="text-align:left;width: 15em; ">
+Real data analysis example 1
+</td>
+<td style="text-align:left;">
+<a href="NA" style="     "></a>
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+8
+</td>
+<td style="text-align:left;">
+2019-10-15
+</td>
+<td style="text-align:left;width: 15em; ">
+Dynamic data retrieval
+</td>
+<td style="text-align:left;">
+<a href="NA" style="     "></a>
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+8
+</td>
+<td style="text-align:left;">
+2019-10-17
+</td>
+<td style="text-align:left;width: 15em; ">
+Web scraping
+</td>
+<td style="text-align:left;">
+<a href="NA" style="     "></a>
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+9
+</td>
+<td style="text-align:left;">
+2019-10-22
+</td>
+<td style="text-align:left;width: 15em; ">
+Intro to Shiny
+</td>
+<td style="text-align:left;">
+<a href="NA" style="     "></a>
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+9
+</td>
+<td style="text-align:left;">
+2019-10-24
+</td>
+<td style="text-align:left;width: 15em; ">
+Shiny as data exploration tool
+</td>
+<td style="text-align:left;">
+<a href="NA" style="     "></a>
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+10
+</td>
+<td style="text-align:left;">
+2019-10-29
+</td>
+<td style="text-align:left;width: 15em; ">
+Python and R = Best Friends
+</td>
+<td style="text-align:left;">
+<a href="NA" style="     "></a>
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+10
+</td>
+<td style="text-align:left;">
+2019-10-31
+</td>
+<td style="text-align:left;width: 15em; ">
+Remote sensing analyses with R and Python
+</td>
+<td style="text-align:left;">
+<a href="NA" style="     "></a>
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+11
+</td>
+<td style="text-align:left;">
+2019-11-05
+</td>
+<td style="text-align:left;width: 15em; ">
+Watershed analyses
+</td>
+<td style="text-align:left;">
+<a href="NA" style="     "></a>
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+11
+</td>
+<td style="text-align:left;">
+2019-11-07
+</td>
+<td style="text-align:left;width: 15em; ">
+Advanced visualizations (videos and reactive graphs)
+</td>
+<td style="text-align:left;">
+<a href="NA" style="     "></a>
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+12
+</td>
+<td style="text-align:left;">
+2019-11-12
+</td>
+<td style="text-align:left;width: 15em; ">
+Real data analysis example 2
+</td>
+<td style="text-align:left;">
+<a href="NA" style="     "></a>
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+12
+</td>
+<td style="text-align:left;">
+2019-11-14
+</td>
+<td style="text-align:left;width: 15em; ">
+Real data analysis example 2
+</td>
+<td style="text-align:left;">
+<a href="NA" style="     "></a>
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+13
+</td>
+<td style="text-align:left;">
+2019-11-19
+</td>
+<td style="text-align:left;width: 15em; ">
+Bigg(ish) data in R and dtplyr
+</td>
+<td style="text-align:left;">
+<a href="NA" style="     "></a>
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+13
+</td>
+<td style="text-align:left;">
+2019-11-21
+</td>
+<td style="text-align:left;width: 15em; ">
+Parallel processing in R
+</td>
+<td style="text-align:left;">
+<a href="NA" style="     "></a>
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+14
+</td>
+<td style="text-align:left;">
+2019-11-26
+</td>
+<td style="text-align:left;width: 15em; ">
+Fall Break
+</td>
+<td style="text-align:left;">
+<a href="NA" style="     "></a>
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+14
+</td>
+<td style="text-align:left;">
+2019-11-28
+</td>
+<td style="text-align:left;width: 15em; ">
+Fall Break, give thanks
+</td>
+<td style="text-align:left;">
+<a href="NA" style="     "></a>
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+15
+</td>
+<td style="text-align:left;">
+2019-12-03
+</td>
+<td style="text-align:left;width: 15em; ">
+Final project work day
+</td>
+<td style="text-align:left;">
+<a href="NA" style="     "></a>
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+15
+</td>
+<td style="text-align:left;">
+2019-12-05
+</td>
+<td style="text-align:left;width: 15em; ">
+Final project work day
+</td>
+<td style="text-align:left;">
+<a href="NA" style="     "></a>
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+16
+</td>
+<td style="text-align:left;">
+2019-12-10
+</td>
+<td style="text-align:left;width: 15em; ">
+Final presentations
+</td>
+<td style="text-align:left;">
+<a href="NA" style="     "></a>
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+16
+</td>
+<td style="text-align:left;">
+2019-12-12
+</td>
+<td style="text-align:left;width: 15em; ">
+Final presentaions
+</td>
+<td style="text-align:left;">
+<a href="NA" style="     "></a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="academic-integrity" class="section level2">
+<h2><span class="header-section-number">2.6</span> Academic integrity</h2>
+<p>Academic integrity: You are responsible for adhering to all university policies on academic
+integrity and student conduct <a href="https://tilt.colostate.edu/integrity/knowTheCode/" class="uri">https://tilt.colostate.edu/integrity/knowTheCode/</a>. TILT
+has a number of resources for students related to writing and study skills:
+<a href="https://tilt.colostate.edu/integrity/resourcesStudents/" class="uri">https://tilt.colostate.edu/integrity/resourcesStudents/</a>.</p>
+
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="environmental-data-science.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"google": false,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "google", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"download": null,
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+</body>
+
+</html>

@@ -25,6 +25,8 @@ navbar:
       href: active.html
     - text: 'WR418'
       href: wr418/land-use-and-water-quality-wr418.html
+    - text: 'WR674'
+      href: WR674/environmental-data-science.html
   right:
     - icon: fa-github fa-lg 
       href: http://github.com/matthewross07 
