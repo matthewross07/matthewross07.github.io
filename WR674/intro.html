@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>3 Intro | WR-674 Data Issues in Hydrology (but really environmental science generally)</title>
+  <meta name="description" content="3 Intro | WR-674 Data Issues in Hydrology (but really environmental science generally)" />
+  <meta name="generator" content="bookdown 0.12 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="3 Intro | WR-674 Data Issues in Hydrology (but really environmental science generally)" />
+  <meta property="og:type" content="book" />
+  
+  
+  
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="3 Intro | WR-674 Data Issues in Hydrology (but really environmental science generally)" />
+  
+  
+  
+
+<meta name="author" content="Dr. Matthew Ross" />
+<meta name="author" content="matt.ross(at)colostate.edu" />
+<meta name="author" content="Class: T,Th 11-12:15 @ NR 250" />
+<meta name="author" content="Office Hours: W,F 10:00-11:00 AM @ NESB B258" />
+
+
+<meta name="date" content="2019-08-28" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="approach.html">
+
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+
+
+
+
+
+
+
+<script src="libs/kePrint-0.0.1/kePrint.js"></script>
+
+
+
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li class="part"><span><b>I Syllabus</b></span></li>
+<li class="chapter" data-level="1" data-path="environmental-data-science.html"><a href="environmental-data-science.html"><i class="fa fa-check"></i><b>1</b> Environmental Data Science</a><ul>
+<li class="chapter" data-level="1.1" data-path="environmental-data-science.html"><a href="environmental-data-science.html#course-goals"><i class="fa fa-check"></i><b>1.1</b> Course Goals</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="approach.html"><a href="approach.html"><i class="fa fa-check"></i><b>2</b> Approach</a><ul>
+<li class="chapter" data-level="2.1" data-path="approach.html"><a href="approach.html#inclusive-classroom"><i class="fa fa-check"></i><b>2.1</b> Inclusive classroom</a></li>
+<li class="chapter" data-level="2.2" data-path="approach.html"><a href="approach.html#flipped-class"><i class="fa fa-check"></i><b>2.2</b> Flipped class</a></li>
+<li class="chapter" data-level="2.3" data-path="approach.html"><a href="approach.html#assignments"><i class="fa fa-check"></i><b>2.3</b> Assignments</a></li>
+<li class="chapter" data-level="2.4" data-path="approach.html"><a href="approach.html#asking-for-help-and-code-on-the-internet"><i class="fa fa-check"></i><b>2.4</b> Asking for help and code on the internet:</a><ul>
+<li class="chapter" data-level="2.4.1" data-path="approach.html"><a href="approach.html#using-other-peoples-code"><i class="fa fa-check"></i><b>2.4.1</b> Using other people’s code</a></li>
+</ul></li>
+<li class="chapter" data-level="2.5" data-path="approach.html"><a href="approach.html#attendance"><i class="fa fa-check"></i><b>2.5</b> Attendance</a></li>
+<li class="chapter" data-level="2.6" data-path="approach.html"><a href="approach.html#grading"><i class="fa fa-check"></i><b>2.6</b> Grading</a></li>
+<li class="chapter" data-level="2.7" data-path="approach.html"><a href="approach.html#schedule"><i class="fa fa-check"></i><b>2.7</b> Schedule</a></li>
+<li class="chapter" data-level="2.8" data-path="approach.html"><a href="approach.html#academic-integrity"><i class="fa fa-check"></i><b>2.8</b> Academic integrity</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="intro.html"><a href="intro.html"><i class="fa fa-check"></i><b>3</b> Intro</a><ul>
+<li class="chapter" data-level="3.1" data-path="intro.html"><a href="intro.html#how-this-site-works"><i class="fa fa-check"></i><b>3.1</b> How this site works</a></li>
+<li class="chapter" data-level="3.2" data-path="intro.html"><a href="intro.html#why-r"><i class="fa fa-check"></i><b>3.2</b> Why R?</a><ul>
+<li class="chapter" data-level="3.2.1" data-path="intro.html"><a href="intro.html#the-community"><i class="fa fa-check"></i><b>3.2.1</b> The Community</a></li>
+<li class="chapter" data-level="3.2.2" data-path="intro.html"><a href="intro.html#the-stats"><i class="fa fa-check"></i><b>3.2.2</b> The Stats</a></li>
+<li class="chapter" data-level="3.2.3" data-path="intro.html"><a href="intro.html#the-tidyverse"><i class="fa fa-check"></i><b>3.2.3</b> The Tidyverse</a></li>
+<li class="chapter" data-level="3.2.4" data-path="intro.html"><a href="intro.html#spatial-r"><i class="fa fa-check"></i><b>3.2.4</b> Spatial R</a></li>
+<li class="chapter" data-level="3.2.5" data-path="intro.html"><a href="intro.html#lots-more"><i class="fa fa-check"></i><b>3.2.5</b> Lots more</a></li>
+</ul></li>
+<li class="chapter" data-level="3.3" data-path="intro.html"><a href="intro.html#why-rstudio"><i class="fa fa-check"></i><b>3.3</b> Why RStudio?</a></li>
+<li class="chapter" data-level="3.4" data-path="intro.html"><a href="intro.html#installing-r-and-rstudio"><i class="fa fa-check"></i><b>3.4</b> Installing R and RStudio</a><ul>
+<li class="chapter" data-level="3.4.1" data-path="intro.html"><a href="intro.html#doing-stuff-in-r"><i class="fa fa-check"></i><b>3.4.1</b> Doing stuff in R</a></li>
+<li class="chapter" data-level="3.4.2" data-path="intro.html"><a href="intro.html#data-in-r"><i class="fa fa-check"></i><b>3.4.2</b> Data in R</a></li>
+</ul></li>
+</ul></li>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">WR-674 Data Issues in Hydrology (but really environmental science generally)</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="intro" class="section level1">
+<h1><span class="header-section-number">3</span> Intro</h1>
+<div id="how-this-site-works" class="section level2">
+<h2><span class="header-section-number">3.1</span> How this site works</h2>
+<p>In general, other people are both more advanced R users than myself, and they
+also happen to care deeply about teaching. As a result, Hadley Wickham,
+Garrett Grolemund, Jenny Bryan, Mara Averick, Mine Çetinkaya-rundel,
+Robin Lovelace, and lots of others have written some truly incredible guides
+to using R for just about everything. Given that these extensive guides exist,
+are generally free to access, and are very clear, and deeply helpful, I will not
+be recreating any of that work here. Rather, I will organize a series of links
+and explainers in these sections. So this is not really a website with class
+notes, more just a place where helpful links and reminders will live. Under
+extreme duress (read: the exact tutorial I want doesn’t exist), I will post my
+own tutorials, this will likely happen later in the semester when we are
+linking together many analyses at once.</p>
+</div>
+<div id="why-r" class="section level2">
+<h2><span class="header-section-number">3.2</span> Why R?</h2>
+<p>Why in this data science class are we using R instead of other languages like
+Python or Julia? Well, the most honest and primary reason is that is the
+language I have been working in for 8 years and I really like it. In addition,
+to my own preferences there are a few other reasons to use R:</p>
+<div id="the-community" class="section level3">
+<h3><span class="header-section-number">3.2.1</span> The Community</h3>
+<p>R has a robust and active community who are constantly building packages that
+extend the capacities of R, who are generally available for help if you ask in
+the right way, and who maintain a clear vision of the future of R. I like all
+these things, but the R community is amazing and different than most other
+programming languages, because of it’s emphasis on being kind and welcoming to
+new coders and to be as <a href="https://www.r-consortium.org/blog/2018/10/16/progress-on-driving-diversity-standards-in-the-r-community-an-update-on-rcdi-wg">expansive and inclusive as possible</a>.<br />
+Because of programs like <a href="https://rladies.org/">RLadies Global</a> R already has
+some of the <a href="https://reshamas.github.io/why-women-are-flourishing-in-r-community-but-lagging-in-python/">best representation of any coding language</a>.
+These community aspects make learning R more approachable, fun, and open.</p>
+</div>
+<div id="the-stats" class="section level3">
+<h3><span class="header-section-number">3.2.2</span> The Stats</h3>
+<p>Unlike Python, R was purpose built for statistical analyses. As a result, many
+advanced statistics come baked into the software with a robust record of what
+the statistic means, who published the original idea, and links to papers that
+justify the approach. This makes smoothly transitioning between different
+statistical approaches relatively easy and well-supported.</p>
+</div>
+<div id="the-tidyverse" class="section level3">
+<h3><span class="header-section-number">3.2.3</span> The Tidyverse</h3>
+<p>Many of the folks I mention above have contributed to or built packages that are
+part of the so-called “tidyverse.” This branch of the R world is one that
+advocates for tidy data, tidy code, and tidy visualization. What this means in
+practice is that there are a series of packages that work really well together
+to go from raw data, to tidy data, to clear visualizations, to clear analyses.
+Of course, the Tidyverse is not the only way to code in R and you should use it
+when/if it is useful, but I really like it and almost all of our examples in
+class will include Tidyverse packages.</p>
+</div>
+<div id="spatial-r" class="section level3">
+<h3><span class="header-section-number">3.2.4</span> Spatial R</h3>
+<p>Doing spatial work in R is getting easier and easier and it is really nice to
+switch from statistical analyses to spatial analyses in the same environment.
+If your work is at all spatial, I encourage you to explore this particular branch
+of the R universe.</p>
+</div>
+<div id="lots-more" class="section level3">
+<h3><span class="header-section-number">3.2.5</span> Lots more</h3>
+<p>This list could be infinite, but the above reasons are primary.</p>
+</div>
+</div>
+<div id="why-rstudio" class="section level2">
+<h2><span class="header-section-number">3.3</span> Why RStudio?</h2>
+<p>I think it is a great way to interact with R, making typical tasks like
+git commits, file organization, and variable verification much easier.</p>
+</div>
+<div id="installing-r-and-rstudio" class="section level2">
+<h2><span class="header-section-number">3.4</span> Installing R and RStudio</h2>
+<p>Watch this video or google it!</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/RN33nzDrWgA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+</iframe>
+<div id="doing-stuff-in-r" class="section level3">
+<h3><span class="header-section-number">3.4.1</span> Doing stuff in R</h3>
+<p>Check out:
+<a href="https://r4ds.had.co.nz/workflow-basics.html">Hadley Wickham’s R for Data Science, Basics</a>
+<a href="https://rstudio.cloud/learn/primers/1">RStudio Cloud Primers, Basics</a></p>
+<p>Or watch this video:
+<iframe width="560" height="315" src="https://www.youtube.com/embed/SWxoJqTqo08" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+</div>
+<div id="data-in-r" class="section level3">
+<h3><span class="header-section-number">3.4.2</span> Data in R</h3>
+<p>Read:
+<a href="https://r4ds.had.co.nz/tibbles.html">Tibbles</a>
+<a href="https://r4ds.had.co.nz/vectors.html">Vectors</a></p>
+
+</div>
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="approach.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"google": false,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "google", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"download": null,
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+</body>
+
+</html>
